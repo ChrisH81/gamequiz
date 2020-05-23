@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="assets/quiz.js"> </script>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <button onclick="startQuiz()">Start</button>
-    
+    <button id="start" onclick="startQuiz()">Start</button>
+    <div id="quiz">
+        <div id="score">Score <span>0</span></div>
+        <div id="timer">Time Left:<span>60</span></div>
+        
+        <div id="question"> </div>
+        <div id="answers"> 
+            <div id="a-0" onclick="selectAnswer(event)"></div>
+            <div id="a-1" onclick="selectAnswer(event)"> </div>
+            <div id="a-2" onclick="selectAnswer(event)"></div>
+            <div id="a-3" onclick="selectAnswer(event)"> </div>
+            
+            
+        </div>
+    </div>
 </body>
 </html>

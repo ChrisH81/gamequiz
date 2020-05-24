@@ -1,5 +1,6 @@
 var timeRemaining = 60;
 let score = 0;
+let highScore =0;
 let currentQuestionIndex = 0;
 
 
@@ -46,9 +47,11 @@ var questionData = [
 function selectAnswer(event) {
     if (questionData[currentQuestionIndex].answers[event.target.innerText]) {
         console.log('right');
+        score += 100;
     }
     else {
         console.log("wrong");
+        score -= 50;
     }
     if (currentQuestionIndex === 3) {
         console.log("game over");
@@ -61,8 +64,8 @@ function selectAnswer(event) {
 
 
 function startQuiz() {
-    document.getElementById("start").style.display = "none";
-    document.getElementById("quiz").style.display = "block";
+    document.getElementById("start-page").style.display = "none";
+    document.getElementById("quiz-page").style.display = "block";
     countDown();
     showQuestion(currentQuestionIndex);
 }

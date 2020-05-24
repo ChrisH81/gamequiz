@@ -1,3 +1,36 @@
+#start {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50vh;
+}
+#quiz-page {
+    margin: 0 auto;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 39px;
+}
 #quiz {
-    display: none;
+    margin: 0 auto;
+    margin-top: 30vh;
+    width:25%;
+}
+#question {
+    font-weight: bold;
+}
+#HUD {
+    margin: 0 auto;
+    width:25%;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 50px;
+}
+#HUD span {
+    font-weight: bold;
+}
+
+body {
+    background-image: url('n64background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

@@ -3,6 +3,17 @@
 
 build a timed coding quiz with multiple-choice questions.
 
+## Description
+This site is a Game Quiz to test your general knowledge of Nintendo 64.
+Each correct answer is worth 100 points. 400 points are the maximum.
+High scores are posted and listed highest to lowest after your initials have been entered. 
+
+## Deployed URL
+[LIVE QUIZ URL](https://chrish81.github.io/gamequiz/)
+
+## Screen Shot
+
+![screen shot](https://i.imgur.com/Q8qllOn.jpg)
 
 ## Code Explanation
 

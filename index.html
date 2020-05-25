@@ -11,6 +11,10 @@
 </head>
 <body>
 <div id="start-page">
+    <div id="high-scores">
+        <h1>High scores</h1>
+        <div id="scores-list"></div>
+    </div>
     <button id="start" class="btn btn-primary btn-lg" onclick="startQuiz()">Start N64 Quiz</button>
 </div>
 <div id="quiz-page" style="display:none">
@@ -21,12 +25,21 @@
     <div id="quiz">
         <div id="question"></div>
         <div id="answers">
-            <div id="a-0" onclick="selectAnswer(event)"></div>
-            <div id="a-1" onclick="selectAnswer(event)"></div>
-            <div id="a-2" onclick="selectAnswer(event)"></div>
-            <div id="a-3" onclick="selectAnswer(event)"></div>
+            <button class="btn btn-primary btn-lg" id="a-0" onclick="selectAnswer(event)"></button>
+            <button class="btn btn-primary btn-lg" id="a-1" onclick="selectAnswer(event)"></button>
+            <button class="btn btn-primary btn-lg" id="a-2" onclick="selectAnswer(event)"></button>
+            <button class="btn btn-primary btn-lg" id="a-3" onclick="selectAnswer(event)"></button>
         </div>
     </div>
+</div>
+<div id="save-page" style="display:none">
+    <div class="form-group">
+        <label id="score-label">Your score: </label>
+        <br>
+        <label Enter initials:</label>
+        <input id="initials" class="form-control" maxlength=2 placeholder="Enter initials...">
+    </div>
+    <button class="btn btn-primary" onclick="submitScore()">Submit Score</button>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
